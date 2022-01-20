@@ -1,3 +1,20 @@
+:root
+{
+  --fundo: #eee;
+  --fundo-interno: #fff;
+  --inicio-color: #CE94BC;
+  --custeio-color: #DBBFDB;
+  --beneficiados-color: #B6B5D8;
+  --municipio-color: #B59DFA;
+  --devs-color: #877BAE;
+
+  --inicio-icon: url('../img/home.png');
+  --custeio-icon: url('../img/bar-chart.png');
+  --beneficiados-icon: url('../img/money.png');
+  --municipio-icon: url('../img/money2.png');
+  --devs-icon: url('../img/light.png');
+}
+
 @keyframes slidein
 {
   0%
@@ -28,7 +45,7 @@
   
 body
 {
-  background: #eee;
+  background: var(--fundo);
   font-family: "Tahoma";
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -49,14 +66,14 @@ body
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #fff;
+  background-color: var(--fundo-interno);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   overflow: hidden;
 }
 
 #left-zone
 {
-  background: #fff;
+  background: var(--fundo-interno);
   height: 75%;
   flex-grow: 0;
   display: flex;
@@ -105,7 +122,7 @@ body
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url('../img/home.png');
+  background-image: var(--inicio-icon);
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -119,7 +136,7 @@ body
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url('../img/bar-chart.png');
+  background-image: var(--custeio-icon);
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -133,7 +150,7 @@ body
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url('../img/money.png');
+  background-image: var(--beneficiados-icon);
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -147,7 +164,7 @@ body
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url('../img/money2.png');
+  background-image: var(--municipio-icon);
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -161,7 +178,7 @@ body
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url('../img/light.png');
+  background-image: var(--devs-icon);
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -191,32 +208,32 @@ body
 
 .list li.item input[type="radio"]:checked ~ label.label_inicio
 {
-  color: #23A88E;
-  border-right: solid 4px #23A88E;
+  color: var(--inicio-color);
+  border-right: solid 4px var(--inicio-color);
 }
 
 .list li.item input[type="radio"]:checked ~ label.label_custeio
 {
-  color: #EE64F5;
-  border-right: solid 4px #EE64F5;
+  color: var(--custeio-color);
+  border-right: solid 4px var(--custeio-color);
 }
 
 .list li.item input[type="radio"]:checked ~ label.label_beneficiados
 {
-  color: #4DF5D3;
-  border-right: solid 4px #4DF5D3;
+  color: var(--beneficiados-color);
+  border-right: solid 4px var(--beneficiados-color);
 }
 
 .list li.item input[type="radio"]:checked ~ label.label_municipio
 {
-  color: #F5C833;
-  border-right: solid 4px #F5C833;
+  color: var(--municipio-color);
+  border-right: solid 4px var(--municipio-color);
 }
 
 .list li.item input[type="radio"]:checked ~ label.label_devs
 {
-  color: #A88C2F;
-  border-right: solid 4px #A88C2F;
+  color: var(--devs-color);
+  border-right: solid 4px var(--devs-color);
 }
 
 .list li.item input[type="radio"]:checked ~ .content
@@ -229,7 +246,7 @@ body
 
 #middle-border
 {
-  background-color: #eee;
+  background-color: var(--fundo);
   height: 75%;
   flex-grow: 1;
   max-width: 2px;
@@ -238,7 +255,53 @@ body
 
 #right-zone
 {
-  background: #fff;
+  background: var(--fundo-interno);
   height: 100%;
   flex-grow: 3;
+}
+
+/*
+    Estilo do botão
+*/
+
+.toggle input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.toggle label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: var(--devs-color);
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+
+.toggle label::after{
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.toggle input:checked + label {
+  background-color: var(--devs-color);
+}
+
+.toggle input:checked + label::after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.toggle label:active:after {
+  width: 45px;
 }

@@ -3,11 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>Monitor de gastos publicos</title>
-        <link rel="stylesheet" href="PaginaPrincipal/style/layout.css">
+        <link rel="stylesheet" href="Geral/style/layout.css">
     </head>
     <body>
+        <div class="toggle">
+            <input id="switch" type="checkbox" name="theme">
+            <label for="switch">Toggle</label>
+        </div>
+
         <div id="scene">
+            
             <div id="left-zone">
+                
                 <ul class="list">
                     <li class="item">
                         <input type="radio" id="inicio" name="basic_carousel" value="inicio" checked="checked" />
@@ -53,5 +60,7 @@
             <div id="middle-border"></div>
             <div id="right-zone"></div>
         </div>
+
+        <script src="Geral/script/script-dark-config.js"></script>
     </body>
 </html>
