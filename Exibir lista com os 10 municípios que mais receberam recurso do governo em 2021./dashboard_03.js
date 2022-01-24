@@ -1,38 +1,7 @@
-csv = "heading1,heading2,heading3,heading4,heading5\nvalue1_1,value2_1,value3_1,value4_1,value5_1\nvalue1_2,value2_2,value3_2,value4_2,value5_2",
+let governo = [
+{total_valor: 4576971.97, id: 12350153000148 , prefeitura: "PREF MUNI AGUA BRANCA"}, {total_valor: 5688917.96, id: 12227351000119, prefeitura: "PREF MUNI ANADIA"}, {total_valor: 85487180.10, id: 12198693000158, prefeitura: "PREF MUNI ARAPIRACA"}
+];
 
+governo.sort((x,y) => y.total_valor - x.total_valor);
 
-$(document).ready(function() {
-    $.ajax({
-        type: "POST",
-        url: "/echo/html/",
-        dataType: "text",
-        data: {
-            html: csv
-        },
-        success: function(data) {
-            processData(data);
-        }
-    });
-});
-
-function processData(allText) {
-    var allTextLines = allText.split(/\r\n|\n/);
-    var headers = allTextLines[0].split(',');
-    var lines = [];
-
-    for (var i=1; i<allTextLines.length; i++) {
-        var data = allTextLines[i].split(',');
-        if (data.length == headers.length) {
-
-            var tarr = [];
-            for (var j=0; j<headers.length; j++) {
-                tarr.push(headers[j]+":"+data[j]);
-            }
-            lines.push(tarr);
-        }
-    }
-console.log(lines);
-}
-
-var nome= 'Harry'
-console.log(nome);
+console.log(governo);
