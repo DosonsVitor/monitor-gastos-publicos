@@ -33,3 +33,6 @@ function processData(allText) {
     }
 console.log(lines);
 }
+
+var nome= 'Harry'
+console.log(nome);
