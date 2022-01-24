@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Programando com o Matheus!</title>
+
+    <link rel="stylesheet" type="text/css" href="Formulário-CSS.css" media="screen"> <!-- Quando você coloca rel="stylesheet" , você está dizendo que o arquivo importado é o arquivo responsável pelo estilo da sua página. -->
+
+    </head>
+    <body>
+        <script>
+            console.log ('Programando com o Matheus!');
+            
+            /* Utilizando uma variavel com String */
+            var nome = 'Matheus Ataide';
+            console.log (nome);
+            /* Para saber quantos caracteres tem esta String: */
+            console.log(nome.length + " caracteres esta String tem"); /* Ou seja, não precisa colocar em uma variavel a palvra/texto, podemos acrescentar assim como foi colocado depois do número */
+            /* Para converter a String para tudo MAIUSCULO:*/
+            console.log(nome.toUpperCase());
+            /* Para converter a String para tudo MINUSCULO:*/
+            console.log(nome.toLowerCase());
+            /* Procurar algum trecho da String:*/
+            console.log(nome.indexOf('Ata')); /*Aparacerá a posição que a primeira letr da da String*/
+            console.log(nome.indexOf('ok')); /*Irá aparecer "-1" porque não foi encontrado esse trecho*/
+
+            /*Para susbtituir alguma parte da String para outra palavra*/
+            console.log(nome.replace('Matheus', 'Bento'));
+
+            /*Para pegar algum trecho da String, com a ordem de cada caractere:*/
+            console.log(nome.slice(2,5));
+
+            /* Para retirar espaços desnecessários de uma String*/
+            var canalYouTube = "     Reprise PT-BR"
+            console.log(canalYouTube);
+            console.log(canalYouTube.trim());
+
+
+            /*Concatenar variveis com String*/
+            console.log ("O canal do Youtube " +canalYouTube.trim() +" foi criado por " +nome);
+            /*Ou para ser mais facil:*/
+            console.log (`O canal do Youtube ${canalYouTube.trim()} foi criado por ${nome}`);
+
+
+            /* Utilizando uma variavel com um Número */
+            var idade = 18;
+            console.log (idade);
+
+
+            /* Atribuir uma variavel com outra variavel */
+            var total = idade + 8;
+            console.log (total);
+
+
+            /* Podemos alterar a variavel que foi "agrupada" */
+            total = 40;
+            console.log (total);
+
+
+            /* E para redeclarar a variavel: */
+            var total = 120;
+            console.log (total);
+
+
+            /*Operadores Matemáticos*/
+            console.log(10 + 5 + 8);
+            console.log (100 - 50 + 20);
+
+            console.log(4 * 5); /*Multiplicação*/  
+
+            console.log(25 / 5); /*Divisão*/ 
+
+            console.log(12 ** 2); /*Exponenciação*/
+            
+            var a = 15;
+            var b = 25;
+            console.log (a + b);
+
+            /*Para mostrar o resto da divisão:*/
+            console.log(10 % 2);
+            console.log(10 % 3);
+            console.log(10 % 4);
+
+            var c = 5;
+            c = c + 1
+            console.log(c);
+            /* OU */
+            c++;
+            console.log(c);
+            console.log(c++); /*Aqui ele vai primerio imprimir a variavel, para depois acrescentar imprimindo depois a variavel*/
+            console.log(c);
+
+            /*Bollean*/
+            var d = true;
+            var e = true;
+
+            console.log('3 < 5', 3 < 5);
+            console.log('3 > 5', 3 > 5);
+            
+            console.log('5 >= 5', 5 >= 5);
+            console.log('5 >= 6', 5 >= 6);
+
+            console.log('5 <= 7', 5 <= 7);
+            console.log('5 <= 4', 5 <= 4);
+
+            console.log('10 != 10', 10 != 10);
+            console.log('10 != 5', 10 != 5);
+
+            console.log('4 == 4', 4 == 4);
+            console.log('5 == 4', 5 == 4);
+
+            var nome1 = 'Ayrton';
+            var nome2 = 'Teshima';
+
+            console.log('nome1 == nome2', nome1 == nome2);
+            console.log('nome1 != nome2', nome1 != nome2);
+
+            console.log('4 === 4', 4 === 4);
+            console.log('4' === '4');
+
+
+            /*Operadores Logicos*/
+            var a = true;
+            var b = false;
+
+            console.log(!a);
+            console.log(!b);
+
+            console.log('!!a', !!a);
+            console.log('!!b', !!b);
+
+            // null, undefined, '', false, 0 // 
+            console.log(!!null);
+            console.log(!!undefined);
+            console.log(!!'');
+            console.log(!!0);
+
+            console.log(!!'texto');
+            console.log(!!20);
+
+            console.log(10 && 'texto' && 'Programador');
+
+            console.log(null && 'Programador a Bordo');
+
+            console.log('Passa' && 0 && 'Dev');
+
+            console.log('Passou' && null);
+
+            console.log('Passou' && 0);
+
+            console.log("false" && 100 && '' && 'teste' && null);
+
+            console.log(10 > 5 && 7 < 10);
+
+            console.log(10 > 5 && 10 > 11);
+
+
+            console.log(null || 'Programador a Bordo');
+
+            console.log(null || 'Programador a Bordo' || 26);
+
+            console.log(null || '' || 26);
+
+            console.log('Programador a Bordo' || 'teste');
+
+            console.log(10 > 5 || 10 < 11);
+
+            console.log(10 > 5 || 10 > 11);
+
+            console.log(10 < 5 || 10 > 11);
+
+            console.log(null || false || 0);
+
+            console.log('Programador' && 2050 || '' && 26);
+
+            console.log('Programador' && 2050 && 'a Bordo' || 0);
+
+            console.log(null || !'' && 'Programador');
+
+            
+            /*Condicionais*/
+            if (true) {
+                console.log('Hello World!');
+            }
+
+            if (false) {
+                console.log('Não vai ser');
+            }
+
+            if (3 > 4) {
+                console.log('3 > 4');
+            }
+
+            if (3 <= 4) {
+                console.log('3 <= 4');
+            }
+
+            var textoVazio = '';
+            if (!textoVazio) {
+                console.log('textoVazio');
+            }
+
+            if (textoVazio) {
+                console.log('oi');
+            } else {
+                console.log('Olá');
+            }
+
+            if (10 > 20) {
+                console.log('10 > 20');
+            } else if (10 <= 12) {
+                console.log('10 <= 12');
+            } else {
+                console.log('Programador');
+            }
+
+            if (10 > 20) {
+                console.log('10 > 20');
+            } else if (10 >= 12) {
+                console.log('10 <= 12');
+            } else {
+                console.log('else');
+            }
+
+            console.log(true ? 'Programador' : 'Designer');
+            console.log(false ? 'Programador' : 'Designer');
+
+            var idade = 26;
+            console.log(idade >= 18 ? 'Maior de idade' : 'Menor de idade');
+            
+            
+            /*Switch//
+            var cor = 'amarelo';
+            switch(cor) {
+                case 'azul':
+                console.log('Cor azul');
+                break;
+
+                case 'amarelo':
+                console.log('Cor amarelo');
+                break;
+
+                case 'vermelho':
+                console.log('Cor vermelho');
+                break;
+            }
+
+            switch(cor) {
+                case 'azul':
+                console.log('Cor azul');
+                break;
+
+                case 'verde':
+                console.log('Cor verde');
+                break;
+
+                case 'vermelho':
+                console.log('Cor vermelho');
+                break;
+
+                default:
+                console.log('Cor rosa');
+                break;
+            }
+
+            switch('laranja') {
+                case 'vermelho':
+                case 'amarelo':
+                case 'laranja':
+                console.log('Cor quente!');
+                break;
+
+                case 'verde':
+                case 'azul':
+                case 'roxo':
+                console.log('Cor fria!');
+                break;
+
+                default:
+                console.log('Não identificado');
+                break;*/
+
+
+                //Array//
+                var numeros = [5, 3, 12, 17, 10, 99];
+                console.log(numeros);
+
+                console.log(numeros[2]);
+                console.log(numeros[5]);
+                console.log(numeros[0]);
+
+                console.log(numeros.length);
+
+                var numeroRetornado = numeros.pop();
+                console.log('numeroRetornado', numeroRetornado);
+                console.log(numeros);
+
+                console.log(numeros.slice(2, 5));
+
+                console.log(numeros.slice(3));
+
+                console.log(numeros.join('--'));
+                console.log(numeros.join(' '));
+
+                var usuario = [
+                'Ayrton',
+                26,
+                'Programador a Bordo',
+                2019,
+                'Brasileiro'
+                ];
+
+                console.log(usuario);
+
+                usuario.push('RJ');
+
+                console.log(usuario);
+
+                console.log(usuario.includes('Brasileiro'));
+                console.log(usuario.includes('Japonês'));
+
+                console.log(usuario.includes(2019));
+
+                
+                console.log(usuario.indexOf(2019));
+                console.log(usuario.indexOf('Japonês'));
+
+                var arr1 = [3, 2, 1];
+                var arr2 = ['Programador', 'a', 'Bordo'];
+
+                var resultado = arr2.concat(arr1).concat(['teste', 'fulano', 'ciclano']);
+                console.log(resultado);
+
+                console.log([...arr1, ...arr2, ...['teste', 'fulano', 'ciclano']]);
+
+                console.log(usuario);
+
+                var nome = usuario[0];
+
+                var idade = usuario[1];
+
+                var ano = usuario[3];
+
+                console.log(nome, idade, ano);
+
+                var [ nome, idade, , , nacionalidade ] = usuario;
+                
+                console.log(nome, idade, nacionalidade);
+            </script>
+    </body>
+</html>
