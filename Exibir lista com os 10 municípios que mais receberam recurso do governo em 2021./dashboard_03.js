@@ -6,4 +6,13 @@ let governo = [
 
 governo.sort((x,y) => y.total_valor - x.total_valor);
 
-console.log(governo);
+console.log(governo[0]);
+console.log(governo[1]);
+console.log(governo[2]);
+console.log(governo[3]);
+console.log(governo[4]);
+console.log(governo[5]);
+console.log(governo[6]);
+console.log(governo[7]);
+console.log(governo[8]);
+console.log(governo[9]);
