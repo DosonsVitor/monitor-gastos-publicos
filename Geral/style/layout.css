@@ -58,7 +58,7 @@ body
   display: flex;
   align-items: center;
   justify-content: left;
-  width: 1500px;
+  width: 80%;
   height: 600px;
   position: absolute;
   top: 0;
@@ -188,7 +188,7 @@ body
 {
   position: absolute;
   left: 350px;
-  top: -400px;
+  top: -1000px;
   width: 65%;
   height: 100%;
   animation-duration: 0.75s;

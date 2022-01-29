@@ -45,7 +45,7 @@ const transformKey = key =>
 
 const changeColors = (colors) => {
     Object.keys(colors).map(key => 
-        html.style.setProperty(transformKey(key), colors[key]) 
+        html.style.setProperty(transformKey(key), colors[key])
     )
 }
 
