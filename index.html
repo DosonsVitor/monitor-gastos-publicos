@@ -3,15 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Monitor de gastos publicos</title>
-        <link rel="stylesheet" href="Geral/style/layout.css">
+        <link rel="stylesheet" href="style/layout.css">
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
     </head>
     <body>
-        <div class="toggle">
-            <input id="switch" type="checkbox" name="theme">
-            <label for="switch">Toggle</label>
-        </div>
 
         <div id="scene">
             
@@ -21,7 +17,23 @@
                     <li class="item">
                         <input type="radio" id="inicio" name="basic_carousel" value="inicio" checked="checked" />
                         <label class="label_inicio" for="inicio">Inicio</label>
-                        <div class="content content_inicio">   
+                        <div class="content content_inicio">
+                            <h1>MONITOR DE GASTOS PUBLICOS NO ESTADO DE ALAGOAS NO ANO DE 2021</h1>
+                            <p>
+                                Esta pagina web demonstra alguns dados a cerca dos gastos publicos feitos pelo governo de Alagoas no estado durante o ano de 2021.
+                            </p>
+                            <ul>
+                                Os dados aqui presentes são:
+                                <li>
+                                    Gráfico de colunas mostrando o valor de custeio aplicado nas secretarias de: educação, comunicação, saúde e segurança;
+                                </li>
+                                <li>
+                                    Lista com os 10 maiores beneficiados em pagementos feitos pelo governo;
+                                </li>
+                                <li>
+                                    Lista com os 10 municípios que mais receberam recurso do governo.
+                                </li>
+                            </ul>
                         </div>
                     </li>
 
@@ -48,21 +60,12 @@
                             
                         </div>
                     </li>
-
-                    <li class="item">
-                        <input type="radio" id="devs" name="basic_carousel" value="devs"/>
-                        <label class="label_devs" for="devs">Desenvolvedores</label>
-                        <div class="content content_devs">
-                            
-                        </div>
-                    </li>
                 </ul>
             </div>
             <div id="middle-border"></div>
             <div id="right-zone"></div>
         </div>
 
-        <script src="Geral/script/script-dark-config.js"></script>
-        <script src="CusteioSecretaria/script.js"></script>
+        <script src="script/CusteioSecretaria/script.js"></script>
     </body>
 </html>
