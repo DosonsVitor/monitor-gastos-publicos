@@ -70,7 +70,7 @@ li
     margin: 10px;
 }
 
-.content_inicio
+#content_inicio
 {
   font-size: 80%;
 }
@@ -188,7 +188,16 @@ li
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: var(--inicio-color);
+}
+
+#content_beneficiados
+{
+  color: var(--beneficiados-color);
+}
+
+#content_municipio
+{
+  color: var(--municipio-color);
 }
 
 .list li.item input[type="radio"]:checked ~ label
