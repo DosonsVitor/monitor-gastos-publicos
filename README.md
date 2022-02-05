@@ -29,12 +29,3 @@ A equipe deve:
 | Task 02           | Jocineide, Rayane                   |
 | Task 03           | Matheus, Josival                    |
 
-
-## Autores
-
-- [@DosonsVitor](https://github.com/DosonsVitor)
-- [@ClaraCortez](https://github.com/claracortez)
-- [@JuliaOliveira](https://github.com/julliaoliveira)
-- [@MatheusAtaide](https://github.com/Matheus-Ataide)
-- [@Josival](https://github.com/Josival3725)
-
