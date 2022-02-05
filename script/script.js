@@ -1,13 +1,13 @@
 custeioSecretaria();
-gerarTabela("https://raw.githubusercontent.com/DosonsVitor/monitor-gastos-publicos/dosons/script/MaioresBeneficiados/MaioresBeneficiados.csv", 'content_beneficiados');
-gerarTabela("", 'content_municipio');
+gerarTabela("https://raw.githubusercontent.com/DosonsVitor/monitor-gastos-publicos/dosons/csv/maiores-beneficiados.csv", 'content_beneficiados');
+gerarTabela("https://raw.githubusercontent.com/DosonsVitor/monitor-gastos-publicos/dosons/csv/repasse-municipios.csv", 'content_municipio');
 
 
 
 function custeioSecretaria()
 {
 
-    Papa.parse("https://raw.githubusercontent.com/DosonsVitor/monitor-gastos-publicos/dosons/script/CusteioSecretaria/custeio-secretaria.csv", {
+    Papa.parse("https://raw.githubusercontent.com/DosonsVitor/monitor-gastos-publicos/dosons/csv/custeio-secretaria.csv", {
         download: true,
         header: true,
         complete: function (results) {
