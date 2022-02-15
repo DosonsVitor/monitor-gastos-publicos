@@ -16,16 +16,20 @@ A equipe deve:
 
 ## Tarefas
 
-- Exibir gráfico de colunas mostrando o valor de custeio usando para cada secretaria. (Task 01)
-- Exibir lista com os 10 maiores beneficiados em pagementos feitos pelo governo (em montante financeiro) em 2021. (Task 02)
-- Exibir lista com os 10 municípios que mais receberam recurso do governo em 2021. (Task 03)
+- Exibir gráfico de colunas mostrando o valor de custeio usando para cada secretaria.
+- Exibir lista com os 10 maiores beneficiados em pagementos feitos pelo governo (em montante financeiro) em 2021.
+- Exibir lista com os 10 municípios que mais receberam recurso do governo em 2021.
 
 
-## Designação da equipe
+## Equipe
 
-| Task              | Responsaveis                        |
-| ----------------- | ----------------------------------- |
-| Task 01           | Doson's, Maria Clara, Julia Daniela |
-| Task 02           | Jocineide, Rayane                   |
-| Task 03           | Matheus, Josival                    |
-
+| Nome           | Email                    |
+| -------------- | ------------------------ |
+| Doson's        | dov1@aluno.ifal.edu.br   |
+| Jocineide      | jbbs2@aluno.ifal.edu.br  |
+| Josival        | jcs28@aluno.ifal.edu.br  |
+| Julia Daniela  | djro1@aluno.ifal.edu.br  |
+| Maria Clara    | mcccr1@aluno.ifal.edu.br |
+| Maria Veronica | mvns3@aluno.ifal.edu.br  |
+| Matheus Ataide | mao3@aluno.ifal.edu.br   |
+| Rayane         | raa5@aluno.ifal.edu.br   |
